@@ -1,0 +1,40 @@
+.navbar {
+  background: var(--blanco);
+  border-bottom: 2px solid var(--gris-borde);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+}
+
+.navbar-logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--negro);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.navbar-links a:hover {
+  color: var(--azul);
+}

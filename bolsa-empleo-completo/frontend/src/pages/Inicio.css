@@ -1,0 +1,147 @@
+.inicio-hero {
+  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul) 100%);
+  color: var(--blanco);
+  padding: 60px 0 50px;
+  text-align: center;
+}
+
+.inicio-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.inicio-hero p {
+  font-size: 17px;
+  margin-bottom: 24px;
+  opacity: 0.88;
+}
+
+.inicio-seccion {
+  padding: 40px 20px;
+}
+
+.inicio-seccion h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.inicio-subtitulo {
+  color: var(--gris-texto);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+/* Grid de tarjetas */
+.puestos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.puesto-card {
+  background: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  border-radius: var(--radio-lg);
+  padding: 18px;
+  box-shadow: var(--sombra);
+  min-height: 160px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.puesto-card:hover {
+  box-shadow: var(--sombra-md);
+}
+
+.puesto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: opacity 0.15s;
+}
+
+.puesto-info.oculto {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.puesto-empresa {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--azul);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.puesto-titulo {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.puesto-salario {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--verde);
+}
+
+.puesto-detalle {
+  position: absolute;
+  inset: 0;
+  background: var(--blanco);
+  border-radius: var(--radio-lg);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 2px solid var(--azul);
+}
+
+.puesto-detalle h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: var(--azul);
+}
+
+.puesto-detalle ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.puesto-detalle li {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--negro);
+}
+
+.nivel-badge {
+  background: var(--azul-claro);
+  color: var(--azul);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 20px;
+}
+
+/* Footer */
+.inicio-footer {
+  background: var(--negro);
+  color: var(--blanco);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner small {
+  opacity: 0.65;
+  font-size: 12px;
+}
